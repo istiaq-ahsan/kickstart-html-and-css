@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: red;
+    color: white;
     font-style: italic;
     font-weight: lighter;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Space Grotesk", sans-serif;
     text-decoration: overline;
     font-size: 80px;
     text-align: center;
@@ -15,14 +17,38 @@ h1 {
 }
 
 #heading-parent {
-    background-color: aquamarine;
+    background-image: linear-gradient(45deg, #261974, transparent), url("../asset/type.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 600px;
     padding: 100px 0;
-    width: 1100px;
+    max-width: 1100px;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 60% 85%, 66% 100%, 34% 100%, 42% 85%, 0% 85%);
+
+    /* tumi jodi 1100px er besi pao taile max 1100 nao r kom paile jeta paiso oitar 100% nao */
     /* margin-top: 40px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto; */
     margin: 30px auto;
 
+}
+
+.btn-parent {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: rgb(97, 43, 168);
+    padding: 8px 15px;
+    color: white;
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(28, 78, 153);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Space Grotesk", sans-serif;
 }
